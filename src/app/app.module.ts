@@ -6,6 +6,7 @@ import {PostComponent} from './post/post.component';
 import { Post2Component } from './post2/post2.component';
 import { Post3Component } from './post3/post3.component';
 import {Post4Component} from './post4/post4.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import {Post4Component} from './post4/post4.component';
     Post4Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

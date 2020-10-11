@@ -6,19 +6,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'untitled';
+   title = 'init';
 
-  inputValue = '';
 
-  constructor() {
-  }
-
-  onInput(event?: KeyboardEvent) {
-    console.log('Event', event);
-    this.inputValue = (<HTMLInputElement>event.target).value;
-  }
-
-  onClick() {
-    console.log('Click!');
+  onInput(event: any) {
+    this.title = event.target.value;
   }
 }
